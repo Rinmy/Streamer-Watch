@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  app:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: streamer-watch-app
+    container_name: streamer-watch-app
+    environment:
+      NODE_PATH: /usr/local/lib/node_modules
+      TZ: Asia/Tokyo
+    tty: true
+    stdin_open: true
+    working_dir: /app/
+    volumes:
+      - ./app/:/app/
+    ports:
+      - "4000:4000"

@@ -1,0 +1,9 @@
+:host {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+#main-content {
+	padding: var(--header-height) 0 0 var(--sidebar-width);
+}
