@@ -1,10 +1,10 @@
-import {NgModule} from "@angular/core";
-import {RouterModule, Routes} from "@angular/router";
-import {WatchComponent} from "./content/watch/watch.component";
-import {StreamerComponent} from "./content/streamer/streamer.component";
-import {TopComponent} from "./content/top/top.component";
-import {ErrorComponent} from "./error/error.component";
-import {StreamerListComponent} from "./content/streamer-list/streamer-list.component";
+import { NgModule } from "@angular/core";
+import { RouterModule, Routes } from "@angular/router";
+import { WatchComponent } from "./content/watch/watch.component";
+import { StreamerComponent } from "./content/streamer/streamer.component";
+import { TopComponent } from "./content/top/top.component";
+import { ErrorComponent } from "./error/error.component";
+import { StreamerListComponent } from "./content/streamer-list/streamer-list.component";
 
 const routes: Routes = [
 	{
@@ -48,4 +48,4 @@ const routes: Routes = [
 	imports: [RouterModule.forRoot(routes)],
 	exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

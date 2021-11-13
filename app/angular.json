@@ -1,8 +1,5 @@
 {
 	"$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-	"cli": {
-		"analytics": "5e2189d5-9b1b-486d-a935-ec12afed1f12"
-	},
 	"version": 1,
 	"newProjectRoot": "projects",
 	"projects": {
@@ -29,8 +26,13 @@
 						"polyfills": "src/polyfills.ts",
 						"tsConfig": "tsconfig.app.json",
 						"inlineStyleLanguage": "scss",
-						"assets": ["src/favicon.ico", "src/assets"],
-						"styles": ["src/styles.scss"],
+						"assets": [
+							"src/favicon.ico",
+							"src/assets"
+						],
+						"styles": [
+							"src/styles.scss"
+						],
 						"scripts": []
 					},
 					"configurations": {
@@ -76,11 +78,11 @@
 							"browserTarget": "streamer-watch:build:development"
 						}
 					},
-					"defaultConfiguration": "development",
 					"options": {
 						"port": 4000,
 						"host": "0.0.0.0"
-					}
+					},
+					"defaultConfiguration": "development"
 				},
 				"extract-i18n": {
 					"builder": "@angular-devkit/build-angular:extract-i18n",
@@ -96,8 +98,13 @@
 						"tsConfig": "tsconfig.spec.json",
 						"karmaConfig": "karma.conf.js",
 						"inlineStyleLanguage": "scss",
-						"assets": ["src/favicon.ico", "src/assets"],
-						"styles": ["src/styles.scss"],
+						"assets": [
+							"src/favicon.ico",
+							"src/assets"
+						],
+						"styles": [
+							"src/styles.scss"
+						],
 						"scripts": []
 					}
 				}

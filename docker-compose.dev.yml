@@ -1,17 +1,18 @@
 version: "3.8"
 
 services:
-  app:
+  app-dev:
     build:
       context: ./
-      dockerfile: Dockerfile
-    image: streamer-watch-app
-    container_name: streamer-watch-app
+      dockerfile: Dockerfile.dev
+    image: streamer-watch-app-dev
+    container_name: streamer-watch-app-dev
     environment:
       NODE_PATH: /usr/local/lib/node_modules
       TZ: Asia/Tokyo
     tty: true
     stdin_open: true
+    init: true
     working_dir: /app/
     volumes:
       - ./app/:/app/
